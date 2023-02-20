@@ -1,0 +1,122 @@
+.lightining {
+    &__containers {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
+    &__revers {
+        display: flex;
+    }
+    &__img {
+        padding: var(--paddingContainer);
+    }
+
+    &__preview {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    &__items {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    &__info {
+        max-width: 370px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        padding: var(--paddingContainer);
+    }
+
+    &__info-sub-tittle {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 1.4;
+    }
+
+    &__info-tittle {
+        font-size: var(--fontSize-tittle);
+        font-weight: 400;
+        line-height: 1.15;
+    }
+
+    &__info-tittle-mobile {
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 1.15;
+        display: none;
+    }
+    &__info-text-mobile {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.4;
+    }
+
+    &__navigation {
+        padding: var(--paddingContainer);
+    }
+
+    &__navigation-tittle {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 1.4;
+    }
+
+    &__navigation-sub-tittle {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.4;
+    }
+
+    &__buttons {
+        display: flex;
+        gap: 15px;
+        padding: var(--paddingContainer);
+    }
+
+    &__email {
+        width: 273px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.15;
+    }
+
+    &__button {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 1;
+    }
+}
+
+@media (max-width: 1199.98px) {
+    .lightining {
+        &__containers {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+        }
+        &__items {
+            align-items: center;
+        }
+    }
+}
+
+@media (max-width: 575.98px) {
+    .lightining {
+        &__info-tittle {
+            display: none;
+        }
+        &__info-tittle-mobile {
+            display: flex;
+            justify-content: center;
+        }
+        &__buttons {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}

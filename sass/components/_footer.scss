@@ -1,0 +1,131 @@
+.footer {
+    background-color: var(--backGround-secondary-color);
+    padding: 150px 20px;
+    display: flex;
+    justify-content: center;
+    color: var(--text-tertiary-color);
+
+    &__container {
+        width: 990px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    &__links {
+        display: flex;
+        gap: 20px;
+    }
+    &__pages {
+        width: 170px;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    &__pages-link {
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 1.9;
+    }
+
+    &__tomothy {
+        width: 185px;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    &__tomothy-link {
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 1.9;
+    }
+
+    &__jane {
+        width: 185px;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    &__jane-link {
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 1.9;
+    }
+
+    &__contact {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    &__contact-location {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    &__contact-phone-img {
+        padding: 0px 13px;
+    }
+
+    &__social {
+        display: flex;
+        gap: 25px;
+        padding: 20px 0px;
+    }
+
+    &__pages-tittle {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 1.4;
+    }
+
+    a {
+        color: var(--text-tertiary-color);
+        text-decoration: none;
+    }
+}
+
+.footer__social-icon:hover {
+    opacity: 0.7;
+    scale: 1.1;
+    transition: 0.3s;
+}
+
+.footer {
+    a:hover {
+        color: var(--decoration-primery-color);
+        transition: 0.3s;
+    }
+    a {
+        transition: 0.3s;
+    }
+    a:active {
+        color: rgb(0, 0, 0);
+    }
+}
+
+@media (max-width: 991.98px) {
+    .footer {
+        &__container {
+            flex-direction: column;
+            align-items: center;
+            gap: 75px;
+        }
+        &__links {
+            text-align: center;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 75px;
+        }
+        &__social {
+            justify-content: center;
+        }
+    }
+}

@@ -1,0 +1,137 @@
+.header {
+	background: url(../../img/header/backgroundcontent.png) no-repeat center center;
+	background-size: cover;
+	clip-path: polygon(0 0, 100% 0, 100% 75%, 50% 100%, 0 75%);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 80px;
+}
+
+.navigation {
+	width: clamp(375px, 100%, 1210px);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: clamp(1rem, 2vw, 2.5rem);
+
+	&__container {
+		display: flex;
+		align-items: center;
+	}
+
+	&__links {
+		list-style: none;
+		display: flex;
+		gap: 40px;
+	}
+
+	&__link {
+		text-decoration: none;
+		color: var(--text-tertiary-color);
+	}
+	&__link-home {
+		color: var(--decoration-primery-color);
+	}
+
+	&__logo {
+		padding-left: 40px;
+	}
+
+	&__social-media {
+		display: flex;
+		gap: 25px;
+	}
+}
+
+.hero {
+	max-width: 825px;
+	text-align: center;
+	padding: 80px 0px;
+
+	&__items {
+		padding: 20px;
+	}
+
+	&__tittle {
+		color: var(--text-tertiary-color);
+		font-size: clamp(3rem, 2vw + 1rem, 4.625rem);
+		line-height: 1.1;
+		font-weight: 700;
+		padding: var(--paddingContainer);
+	}
+
+	&__sub-tittle {
+		color: var(--text-tertiary-color);
+		font-size: var(--fontSize-sub-tittle);
+		font-weight: 400;
+		line-height: 1.4;
+		padding: var(--paddingContainer);
+		text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	}
+
+	&__button {
+		margin: 40px 0px 260px 0px;
+	}
+}
+
+.header {
+	a:hover {
+		color: var(--decoration-primery-color);
+		transition: 0.3s;
+	}
+	a {
+		transition: 0.3s;
+	}
+	a:active {
+		color: rgb(0, 0, 0);
+	}
+}
+
+.navigation {
+	&__social-media-icon:hover {
+		opacity: 0.7;
+		scale: 1.1;
+		transition: 0.3s;
+	}
+	&__social-media-icon {
+		transition: 0.3s;
+	}
+}
+
+// adap
+
+@media (max-width: 991.98px) {
+	.navigation {
+		justify-content: center;
+
+		&__links {
+			display: none;
+		}
+		&__social-media {
+			display: none;
+		}
+		&__logo {
+			padding: 0;
+		}
+	}
+}
+
+@media (max-width: 575.98px) {
+	.navigation {
+		justify-content: start;
+
+		&__links {
+			display: none;
+		}
+		&__social-media {
+			display: none;
+		}
+	}
+
+	.hero {
+		&__tittle {
+			font-weight: 400;
+		}
+	}
+}
